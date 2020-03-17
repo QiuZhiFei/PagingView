@@ -290,7 +290,7 @@ open class PagingView: UIScrollView {
         var item = indexPath.item
         let sections = forceSections()
         
-        let sectionIndex = sections.index(of: indexPath.section)
+        let sectionIndex = sections.firstIndex(of: indexPath.section)
         
         switch position {
         case .left:
